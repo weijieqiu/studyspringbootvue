@@ -1,0 +1,8 @@
+# web
+spring:
+  mvc:
+    # 过滤规则
+    static-path-pattern: /static/**
+  resources:
+    # 静态资源位置
+    static-locations: classpath:/static/
