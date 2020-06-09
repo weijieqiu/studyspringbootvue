@@ -2,7 +2,7 @@
 spring:
   mvc:
     # 过滤规则
-    static-path-pattern: /static/**
+    static-path-pattern: /**
   resources:
     # 静态资源位置
     static-locations: classpath:/static/

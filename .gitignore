@@ -29,3 +29,13 @@ build/
 
 ### VS Code ###
 .vscode/
+
+### fontend ###
+src/main/resources/fontend/node_modules/
+src/main/resources/fontend/dist/
+src/main/resources/fontend/.DS_Store
+src/main/resources/fontend/npm-debug.log*
+src/main/resources/fontend/yarn-debug.log*
+src/main/resources/fontend/yarn-error.log*
+src/main/resources/fontend/package-lock.json
+src/main/resources/fontend/tests/**/coverage/

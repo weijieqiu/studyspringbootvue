@@ -1,6 +1,6 @@
-package com.itgreatq.studyspringboot.controller;
+package com.itgreatq.studyspringboot.v1.controller;
 
-import com.itgreatq.studyspringboot.domain.Book;
+import com.itgreatq.studyspringboot.v1.domain.Book;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -11,7 +11,7 @@ import java.util.UUID;
 @RestController
 public class BookController {
 
-    @GetMapping("/book")
+    @GetMapping("/v1/book")
     public Book getJSONbook(){
         Book book = new Book();
         book.setId(UUID.randomUUID());

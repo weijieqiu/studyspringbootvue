@@ -1,4 +1,4 @@
-package com.itgreatq.studyspringboot.domain;
+package com.itgreatq.studyspringboot.v1.domain;
 
 import com.fasterxml.jackson.annotation.JsonFormat;
 
