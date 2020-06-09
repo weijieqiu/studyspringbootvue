@@ -31,11 +31,11 @@ build/
 .vscode/
 
 ### fontend ###
-src/main/resources/fontend/node_modules/
-src/main/resources/fontend/dist/
-src/main/resources/fontend/.DS_Store
-src/main/resources/fontend/npm-debug.log*
-src/main/resources/fontend/yarn-debug.log*
-src/main/resources/fontend/yarn-error.log*
-src/main/resources/fontend/package-lock.json
-src/main/resources/fontend/tests/**/coverage/
+src/main/resources/fontend/vue-admin-template/node_modules/
+src/main/resources/fontend/vue-admin-template/dist/
+src/main/resources/fontend/vue-admin-template/.DS_Store
+src/main/resources/fontend/vue-admin-template/npm-debug.log*
+src/main/resources/fontend/vue-admin-template/yarn-debug.log*
+src/main/resources/fontend/vue-admin-template/yarn-error.log*
+src/main/resources/fontend/vue-admin-template/package-lock.json
+src/main/resources/fontend/vue-admin-template/tests/**/coverage/
