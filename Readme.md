@@ -16,3 +16,12 @@
 ```
 生成的文件位于 src/main/resources/fontend/vue-admin-template/dist 下,拷贝 dist 中的内容放入 src/main/resources/static 下即可
 
+
+
+## 样例
+
+![image-20200610232126586](Readme.assets/image-20200610232126586.png)
+
+![image-20200610232210338](Readme.assets/image-20200610232210338.png)
+
+![image-20200610232223539](Readme.assets/image-20200610232223539.png)
