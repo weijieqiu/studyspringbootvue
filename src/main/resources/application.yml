@@ -6,3 +6,6 @@ spring:
   resources:
     # 静态资源位置
     static-locations: classpath:/static/
+# Tomcat
+server:
+  port: 8050
