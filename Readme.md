@@ -25,3 +25,11 @@
 ![image-20200610232210338](Readme.assets/image-20200610232210338.png)
 
 ![image-20200610232223539](Readme.assets/image-20200610232223539.png)
+
+
+
+## 更新记录
+
+- 2020-06-13
+
+  > 新增 `freemarker` 的使用
