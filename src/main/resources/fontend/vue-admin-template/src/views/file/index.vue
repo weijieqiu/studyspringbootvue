@@ -1,28 +1,37 @@
 <template>
-  <div>文件上传下载示例
+  <div>
+    <span>参考: https://element.eleme.cn/#/zh-CN/component/upload</span><br/>
+    <span>示例: 点击上传</span>
     <el-upload
       class="upload-demo"
-      action="https://jsonplaceholder.typicode.com/posts/"
+      action="http://localhost:8050/v1/file/upload"
       :on-preview="handlePreview"
       :on-remove="handleRemove"
       :before-remove="beforeRemove"
       multiple
-      :limit="3"
       :on-exceed="handleExceed"
-      :file-list="fileList">
+      :file-list="fileList"
+      name="file">
       <el-button size="small" type="primary">点击上传</el-button>
-      <div slot="tip" class="el-upload__tip">只能上传jpg/png文件，且不超过500kb</div>
+      <div slot="tip" class="el-upload__tip">上传单个文件不超过1MB，并且单次上传大小不超过10MB</div>
     </el-upload>
   </div>
 
 </template>
 
 <script>
+  import {getFileList} from '@/api/file'
+
   export default {
     data() {
       return {
-        fileList: [{name: 'food.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}, {name: 'food2.jpeg', url: 'https://fuss10.elemecdn.com/3/63/4e7f3a15429bfda99bce42a18cdd1jpeg.jpeg?imageMogr2/thumbnail/360x360/format/webp/quality/100'}]
+        fileList: []
       };
+    },
+    created() {
+      // getFileList().then(response => {
+      //   this.result = response.data
+      // })
     },
     methods: {
       handleRemove(file, fileList) {
@@ -35,7 +44,7 @@
         this.$message.warning(`当前限制选择 3 个文件，本次选择了 ${files.length} 个文件，共选择了 ${files.length + fileList.length} 个文件`);
       },
       beforeRemove(file, fileList) {
-        return this.$confirm(`确定移除 ${ file.name }？`);
+        return this.$confirm(`确定移除 ${file.name}？`);
       }
     }
   }
@@ -49,9 +58,11 @@
     position: relative;
     overflow: hidden;
   }
+
   .avatar-uploader .el-upload:hover {
     border-color: #409EFF;
   }
+
   .avatar-uploader-icon {
     font-size: 28px;
     color: #8c939d;
@@ -60,6 +71,7 @@
     line-height: 178px;
     text-align: center;
   }
+
   .avatar {
     width: 178px;
     height: 178px;
